@@ -1,0 +1,3 @@
+CREATE KEYSPACE bookmanagement WITH replication = {'class' :'SimpleStrategy','replication_factor' : 3};
+use bookmanagement;
+CREATE TABLE book(id uuid,name varchar,category varchar,price varchar, PRIMARY KEY (id));
